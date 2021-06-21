@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom'
-import img from '../images/re.jpg'
+import img from '../images/front_desk.png'
 import axios from 'axios'
 
 
@@ -17,15 +17,15 @@ const [password, setpassword] = useState(null)
 const onsubmit =(e)=>{
     e.preventDefault();
    console.log("email & password :: ",email, password); 
-   if(email != password){
+   if(email !== password){
        alert("email and password does not match");
    }else{
     axios.get('https://jsonplaceholder.typicode.com/todos')
     .then(function (response) {
       // handle success
       console.log(response);
-      if(response.status == 200){
-          history.push("/home");
+      if(response.status === 200){
+          history.push("/Dashboard");
       }
     })
     .catch(function (error) {
@@ -49,7 +49,7 @@ const onsubmit =(e)=>{
 <div className="container">
       <div className="row content">
         <div className="col-md-6 mb-3">
-          <img src= { img } className="img-fluid" alt="image" />
+          <img src= { img } className="img-fluid" alt="logo" />
         </div>
         
           <div className="col-md-3 mb-3">

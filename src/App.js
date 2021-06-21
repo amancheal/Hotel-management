@@ -4,11 +4,13 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
-// import Header from './components/Headers/header'
 import Login from './components/loginForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./components/Home"
+import Dashboard from "./components/Dashboard";
+
+
+
+
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
     <Switch>
       <Route path={"/"} exact component={Login} />
       <Route path={"/Login"} exact component={Login} />
-      <Route path={"/Home"} exact component={Home} />
+      <Route path={"/Dashboard"} exact component={Dashboard} />
+   
     </Switch>
   </Router>
     </div>
