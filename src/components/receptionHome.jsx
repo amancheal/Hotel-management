@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-function receptionHome(){
+function ReceptionHome(){
     return(
         <div>
         <h3>hello i am home</h3>
@@ -16,4 +16,4 @@ function receptionHome(){
 
 
 
-export default receptionHome
+export default ReceptionHome;

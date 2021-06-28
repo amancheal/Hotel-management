@@ -2,7 +2,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import Login from './components/loginForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +26,9 @@ function App() {
       <Route path={"/Dashboard"} exact component={ReceptionHome} />
    
     </Switch>
+    
   </Router>
+ 
     </div>
     
   );

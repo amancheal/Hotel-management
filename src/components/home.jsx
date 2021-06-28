@@ -1,26 +1,7 @@
-import React, {useEffect, useState } from "react";
-import axios from "axios"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-import img1 from '../images/recep1.jpg'
-import img2 from '../images/buying.jpg'
-import img3 from '../images/food.jpg'
-import img4 from '../images/accounting.jpg'
-import img5 from '../images/sales.jpg'
-import img6 from '../images/human.jpg'
-import img7 from '../images/cleaning.jpg'
-import img8 from '../images/it.jpg'
+import React from 'react'
 
 
-
-
-
-
-function Dashboard(){
+function home(){
     const [data, setdata] = useState([]);
     useEffect(()=>{
 
@@ -54,12 +35,8 @@ function Dashboard(){
   <div id="row1-cards" className="row mx-5 mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
 
         <div className="col">
-         
             <div  className="card inner-box m-3">
-            <li>
-  <a href="receptionhome"><img src={ img1 } onClick="receptionHome" alt="card" width="150px" height="120px" /></a>
-</li>
-           {/* <img src= { img1 } onClick={onsubmit} alt="Card" /> */}
+           <img src= { img1 } onClick={onsubmit} alt="Card" />
                 <div className="card-body">
                 <h5 className="card-title">Front Office</h5>
                 </div>
@@ -137,4 +114,6 @@ function Dashboard(){
 
 
 
-export default Dashboard
+export default home
+
+
