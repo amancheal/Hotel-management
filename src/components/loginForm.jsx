@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom'
-import img from '../images/front_desk.png'
+import img from '../images/re.jpg'
 import axios from 'axios'
 
 
